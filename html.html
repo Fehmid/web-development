@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+function compareStr() {
+            var string1 = "World";
+            var string2 = "World";
+            var result = string1.localeCompare(string2);
+
+            document.getElementById("test").innerHTML = result;
+         }
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+});
+
+</script> 
+<form onsubmit="javaScriptFunction(); return false;">
+        <input type="text" id="textbox" />
+        <input type="text" id="textbox" />
+        <p id="output">
+        
+       
+        </form>    
+     
+</head>
+<body>
+
+<button>Compare</button>
+
+
+<div style="background:#0000FF;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
